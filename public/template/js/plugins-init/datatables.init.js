@@ -53,6 +53,23 @@ let dataSet = [
            $(row).addClass('selected')
         } 
     });
+    var table = $('#examplerow').DataTable({
+        createdRow: function ( row, data, index ) {
+           $(row).addClass('selected')
+           
+        },
+        'columnDefs': [
+            {
+                "targets": 0, // your case first column
+                "className": "text-center",
+                "width": "4%"
+           },
+           {
+                "targets": 2,
+                "className": "text-right",
+           }],
+        
+    });
       
     table.on('click', 'tbody tr', function() {
     var $row = table.row(this).nodes().to$();

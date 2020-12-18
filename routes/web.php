@@ -47,10 +47,12 @@ Route::post('/laporan/edit/{id}','LaporanController@edit')->name('edit_laporan')
 Route::get('/laporan/download/{jenis_file}/{nagari}/{jorong}/{file}','LaporanController@download')->name('download_laporan');
 
 
-Route::get('/laporan/lkg','K1Controller@index')->name('lkg');
+Route::get('/laporan/lkg/k1k4','K1Controller@index')->name('lkg.k1k4');
 Route::post('/laporan/lkg/tambah_k1','K1Controller@tambah')->name('tambahk1');
 Route::post('/laporan/lkg/ubah_k1/{id}','K1Controller@ubah')->name('ubahk1');
 Route::get('/laporan/lkg/hapus_k1/{id}','K1Controller@hapus')->name('hapusk1');
 Route::post('/laporan/lkg/tambah_k4','K4Controller@tambah')->name('tambahk4');
 Route::post('/laporan/lkg/ubah_k4/{id}','K4Controller@ubah')->name('ubahk4');
 Route::get('/laporan/lkg/hapus_k4/{id}','K4Controller@hapus')->name('hapusk4');
+
+Route::get('/laporan/lkg/diare','DiareController@index')->name('lb1.diare');

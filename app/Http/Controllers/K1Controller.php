@@ -63,7 +63,7 @@ class K1Controller extends Controller
                 
                
             ]);
-            return redirect('/laporan/lkg')->with(['success' => 'Data Berhasil Disimpan!!']);
+            return redirect('/laporan/lkg/k1k4')->with(['success' => 'Data Berhasil Disimpan!!']);
         }
     }
 
@@ -90,7 +90,7 @@ class K1Controller extends Controller
             'DPT' => $request->DPT
            
         ]);
-            return redirect('/laporan/lkg')->with(['success' => 'Data Berhasil Diubah!!']);
+            return redirect('/laporan/lkg/k1k4')->with(['success' => 'Data Berhasil Diubah!!']);
     }
 
     /**

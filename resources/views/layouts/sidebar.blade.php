@@ -55,7 +55,14 @@
                     <li><a href="{{route('semua_laporan')}}">Semua Laporan</a></li>
                 </ul>
                 <ul aria-expanded="false">
-                    <li><a href="#">Laporan LB1</a></li>
+                    <li>
+                        <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">   
+                            <span class="nav-text">LAPORAN LB1, PTM, P2P 2020</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{route('lb1.diare')}}">Diare</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul aria-expanded="false">
                     <li>
@@ -64,7 +71,7 @@
                             <span class="nav-text">Laporan Kesga Gizi KB Imunisasi..</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="{{route('lkg')}}">Identitas K1 K4</a></li>
+                            <li><a href="{{route('lkg.k1k4')}}">Identitas K1 K4</a></li>
                         </ul>
                     </li>
                     
